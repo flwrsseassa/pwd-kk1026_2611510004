@@ -4,3 +4,5 @@ pada pertemuan ke-2, saya:
 
 1. menyiapkan artefak pertemuan-01 sebagai baselane pertemuan-02, halaman masih sama dengan pertemuan-01
 2. menambah formulir pada section#contact, adapun formulir yang ditambahkan beluam ada styling.
+3. menambahkan CSS dasar selector ID section#about dan menata formulir dengan CSS dasar.
+4. memisahkan CSS internal dan menghubungkan styles.css dengan index.html

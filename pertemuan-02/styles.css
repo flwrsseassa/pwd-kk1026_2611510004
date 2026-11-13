@@ -3,29 +3,46 @@
 }
 
 body {
-margin: 0;
-padding: 12px;
-font-family: Arial, sans-serif;
-color: #111827;
-background-color: #eef2f7;
+  margin: 0;
+  padding: 12px;
+  font-family: Arial, sans-serif;
+  color: #111827;
+  background-color: #eef2f7;
 }
 
 /* Header */
 header {
-background-color: #003366;
-color: #ffffff;
-padding: 20px;
-margin-bottom: 20px;
-border: 1px solid #00264d;
+  background-color: #003366;
+  color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #00264d;
 }
 
 header h1 {
-margin: 0 0 16px;
-font-size: 28px;
+  margin: 0 0 16px;
+  font-size: 28px;
+}
+
+nav ul {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 8px;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+nav a {
+color: #ffffff;
+font-weight: bold;
+text-decoration: none;
 }
 
 section {
-width: 100%;
+  width: 100%;
 }
 
 #home {
@@ -36,24 +53,24 @@ width: 100%;
 }
 
 #home h2 {
-color: #003366;
-border-bottom: 2px solid #003366;
-padding-bottom: 6px;
-margin-top: 0;
-margin-bottom: 16px;
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 6px;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 #home p {
-line-height: 1.6;
-margin: 0 0 16px;
+  line-height: 1.6;
+  margin: 0 0 16px;
 }
 
 #home img {
-display: block;
-width: 240px;
-max-width: 100%;
-height: auto;
-border: 1px solid #cbd5e1;
+  display: block;
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #cbd5e1;
 }
 
 #about {
@@ -129,8 +146,8 @@ border: 1px solid #cbd5e1;
 }
 
 #contact textarea {
-min-height: 80px;
-resize: vertical;
+  min-height: 80px;
+  resize: vertical;
 }
 
 #contact button {
@@ -145,14 +162,14 @@ resize: vertical;
 
 /* Footer */
 footer {
-background-color: #003366;
-color: #ffffff;
-text-align: center;
-padding: 14px 20px;
-margin-top: 20px;
-border: 1px solid #00264d;
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 20px;
+  margin-top: 20px;
+  border: 1px solid #00264d;
 }
 
 footer p {
-margin: 0;
+  margin: 0;
 }

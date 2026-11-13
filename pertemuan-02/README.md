@@ -9,3 +9,4 @@ pada pertemuan ke-2, saya:
 5. menerapkan box model pada elemen halaman
 6. menata header, section, formulir, dan footer dengan mengatur padding, border, dan margin agar didalam dan luar elemen halaman memiliki ukuran dan jarak yang sesuai.
 7. menerapkan flexbox pada navigasi pertemuan-02
+8. mengatur jarak antar elemen dengan gap dan menempatkan contact pada lebar penuh dengan grid-column.

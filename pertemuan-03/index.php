@@ -3,6 +3,45 @@
 $nama = "Dhea Safira";
 // ini untuk penulisan konstanta
 const phi = 3.14;
+/*
+  true atau false = tipe data boolean 
+  null = tanpa isi (ketiadaan)
+  123 = tipe data angka (int)
+  3.14 = tipe data decimal
+*/
+$paras = false;
+$semester = 1;
+
+switch ($semester) {
+  case 1:
+    $semesterku = "ku lah mulai belajar";
+    $pacarku = "Dhea";
+    break;
+  case 2:
+    $semesterku = "ku lah mulai agak bisa";
+    $pacarku = "Callila";
+    break;
+  case 3:
+    $semesterku = "ku lah mulai nakal";
+    $pacarku = "Susana";
+    break;
+  case 4:
+    $semesterku = "ku lah mulai nyesel";
+    $pacarku = "Fiola";
+    break;
+  case 5:
+    $semesterku = "ku lah mulai mengejar nilai";
+    $pacarku = "Vina";
+    break;
+  default:
+    $semesterku = "lah kofang";
+    $pacarku = "Elina";
+    break;
+}
+
+for ($i = 1; $i <= 5; $i++):
+  echo $i . "<br>";
+endfor;
 ?>
 
 <!doctype html>
@@ -57,6 +96,12 @@ const phi = 3.14;
       <article>
         <h3>Profil Singkat</h3>
         <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
+        <?php
+        if ($paras):
+          echo "<p>Saya berwajah cantik (calon istri perwira). </p>";
+        endif;
+        ?>
+        <p>Semester <?php echo $semester ?> (<?= $semesterku ?>). Pacarku (<?= $pacarku ?>)</p>
 
         <h3>Target Belajar</h3>
 

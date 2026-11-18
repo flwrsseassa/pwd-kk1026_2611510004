@@ -11,4 +11,5 @@ pada pertemuan ke-2, saya:
 7. menerapkan flexbox pada navigasi pertemuan-02
 8. mengatur jarak antar elemen dengan gap dan menempatkan contact pada lebar penuh dengan grid-column.
 9. menerapkan desain web responsif Breakpoint dan Media Query dengan pendekatan Mobile-First serta menyesuaikan Navigasi dan Contact pada Viewport lebih lebar
-10.
+10. menghubungkan Javascript eksternal dengan index.html
+11. memilih Elemen dengan metode getElementById()

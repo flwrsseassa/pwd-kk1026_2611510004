@@ -13,3 +13,5 @@ pada pertemuan ke-2, saya:
 9. menerapkan desain web responsif Breakpoint dan Media Query dengan pendekatan Mobile-First serta menyesuaikan Navigasi dan Contact pada Viewport lebih lebar
 10. menghubungkan Javascript eksternal dengan index.html
 11. memilih Elemen dengan metode getElementById()
+12. menguji coba elemen dengan metode getElementById
+13. menguji coba elemen dengan metode querySelector dan querySelectorAll

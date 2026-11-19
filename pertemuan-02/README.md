@@ -20,3 +20,4 @@ pada pertemuan ke-2, saya:
 16. Menguji metode classList.contains("nav-open") dan classList.toggle("nav-open") pada elemen #navMenu melalui Console DevTools. Metode toggle berhasil menambahkan (true) dan menghapus (false) class secara bergantian.
 17. Menguji pemasangan event listener click pada tombol #navToggle menggunakan addEventListener.
 18. menambahkan Humberger menu pada tampilan responsif
+19. mengambil nilai input formulir serta memeriksa kelengkapan data selanjutnya memvalidasi teks, email, nilai numerik, tanggal, Radio Button, checkbox, select, textarea.

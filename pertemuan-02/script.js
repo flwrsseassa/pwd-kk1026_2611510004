@@ -2,6 +2,13 @@ const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");
 const contactForm = document.getElementById("contactForm");
 
+const namaInput = document.getElementById("nama");
+const emailInput = document.getElementById("email");
+const semesterInput = document.getElementById("semester");
+
+const nama = namaInput.value;
+const email = emailInput.value;
+const semester = semesterInput.value;
 
 const jenisPesan = document.querySelector(
   'input[name="jenis_pesan"]:checked',

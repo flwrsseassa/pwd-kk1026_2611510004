@@ -15,3 +15,5 @@ pada pertemuan ke-2, saya:
 11. memilih Elemen dengan metode getElementById()
 12. menguji coba elemen dengan metode getElementById
 13. menguji coba elemen dengan metode querySelector dan querySelectorAll
+14. menguji nilai input dengan value
+15. mengubah konten teks dengan textcontent dan menguji perubahan teks pada #fromFeedback melalui Console DevTools.

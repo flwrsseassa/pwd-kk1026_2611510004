@@ -12,8 +12,9 @@ pada pertemuan ke-2, saya:
 8. mengatur jarak antar elemen dengan gap dan menempatkan contact pada lebar penuh dengan grid-column.
 9. menerapkan desain web responsif Breakpoint dan Media Query dengan pendekatan Mobile-First serta menyesuaikan Navigasi dan Contact pada Viewport lebih lebar
 10. menghubungkan Javascript eksternal dengan index.html
-11. memilih Elemen dengan metode getElementById()
-12. menguji coba elemen dengan metode getElementById
-13. menguji coba elemen dengan metode querySelector dan querySelectorAll
-14. menguji nilai input dengan value
+11. memilih Elemen dengan metode getElementById() melalui Console DevTools.
+12. menguji coba elemen dengan metode getElementById melalui Console DevTools.
+13. menguji coba elemen dengan metode querySelector dan querySelectorAll melalui Console DevTools.
+14. menguji nilai input dengan value melalui Console DevTools.
 15. mengubah konten teks dengan textcontent dan menguji perubahan teks pada #fromFeedback melalui Console DevTools.
+16. Menguji metode classList.contains("nav-open") dan classList.toggle("nav-open") pada elemen #navMenu melalui Console DevTools. Metode toggle berhasil menambahkan (true) dan menghapus (false) class secara bergantian.

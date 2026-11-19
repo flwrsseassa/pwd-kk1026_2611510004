@@ -1,12 +1,15 @@
 const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");
+
+  const isOpen = navMenu.classList.toggle("nav-open");
+
+
 const contactForm = document.getElementById("contactForm");
 const formFeedback = document.getElementById("formFeedback");
 
 const namaInput = document.getElementById("nama");
 const emailInput = document.getElementById("email");
 const semesterInput = document.getElementById("semester");
-
 
 const nama = namaInput.value;
 const email = emailInput.value;

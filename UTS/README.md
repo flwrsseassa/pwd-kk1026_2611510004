@@ -7,3 +7,4 @@ pada p7, saya melakukan:
 5. menambahkan menu baru yaitu Pendaftaran Seminar di index.php
 6. menambahkan section#seminar lalu input formulirnya serta menstyling CSS dasarnya
 7. memproses PHP dan memvalidasi JavaScript dan PHP, serta memastikan proses agar formulir baru tidak mengganggu fitur Kontak.
+8. Memperbaiki pemrosesan PRG session pendaftaran seminar

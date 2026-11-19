@@ -3,6 +3,17 @@ session_start();
 
 // P7: Memproses data formulir dan menyimpannya ke dalam session.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+	if (isset($_POST["kirim_seminar"])) {
+		$_SESSION["nama_peserta"] = trim((string) ($_POST["nama_peserta"] ?? ""));
+		$_SESSION["nim_peserta"] = trim((string) ($_POST["nim_peserta"] ?? ""));
+		$_SESSION["prodi_peserta"] = trim((string) ($_POST["prodi_peserta"] ?? ""));
+		$_SESSION["pilihan_seminar"] = trim((string) ($_POST["pilihan_seminar"] ?? ""));
+		$_SESSION["alasan_seminar"] = trim((string) ($_POST["alasan_seminar"] ?? ""));
+
+		header("Location: index.php#seminar");
+		exit;
+	}
+
 	$nama = trim((string) ($_POST["nama"] ?? ""));
 	$email = trim((string) ($_POST["email"] ?? ""));
 	$semesterForm = trim((string) ($_POST["semester"] ?? ""));

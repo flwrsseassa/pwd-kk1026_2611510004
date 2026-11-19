@@ -107,7 +107,7 @@ switch ($programStudi) {
 				<li><a href="#home">Beranda</a></li>
 				<li><a href="#about">Tentang</a></li>
 				<li><a href="#contact">Kontak</a></li>
-				<li><a href="seminar">Pendaftaran Seminar</li>
+				<li><a href="#seminar">Pendaftaran Seminar</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -283,31 +283,84 @@ switch ($programStudi) {
 		<section id="seminar">
 			<h2>Pendaftaran Seminar Teknologi</h2>
 
-			<form action="#seminar" method="POST">
-				<label for="nama">Nama Peserta</label>
-				<input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+			<form id="seminarForm" class="js-seminar-form" action="index.php" method="post" novalidate>
+				<div class="form-group">
+					<label for="nama_peserta">Nama Peserta</label><br />
 
-				<label for="nim">NIM</label>
-				<input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+					<input
+						class="input-form"
+						type="text"
+						id="nama_peserta"
+						name="nama_peserta"
+						placeholder="Masukkan nama peserta"
+						minlength="3"
+						maxlength="50"
+						required />
+				</div>
 
-				<label for="prodi">Program Studi</label>
-				<input type="text" id="prodi" name="prodi" placeholder="Masukkan Program Studi" required>
+				<div class="form-group">
+					<label for="nim_peserta">NIM</label><br />
 
-				<label for="pilihan_seminar">Pilihan Seminar</label>
-				<select id="pilihan_seminar" name="pilihan_seminar" required>
-					<option value="">-- Pilih Seminar --</option>
-					<option value="Artificial Intelligence">Artificial Intelligence</option>
-					<option value="Web Development">Web Development</option>
-					<option value="Cyber Security">Cyber Security</option>
-					<option value="Data Analytics">Data Analytics</option>
-				</select>
+					<input
+						class="input-form"
+						type="text"
+						id="nim_peserta"
+						name="nim_peserta"
+						placeholder="Masukkan NIM"
+						required />
+				</div>
 
-				<label for="alasan">Alasan Mengikuti Seminar</label>
-				<textarea id="alasan" name="alasan" rows="4" placeholder="Tuliskan alasan mengikuti seminar" required></textarea>
+				<div class="form-group">
+					<label for="prodi_peserta">Program Studi</label><br />
 
-				<button type="submit" name="kirim">Kirim</button>
+					<input
+						class="input-form"
+						type="text"
+						id="prodi_peserta"
+						name="prodi_peserta"
+						placeholder="Masukkan program studi"
+						required />
+				</div>
+
+				<div class="form-group">
+					<label for="pilihan_seminar">Pilihan Seminar</label><br />
+
+					<select class="input-form" id="pilihan_seminar" name="pilihan_seminar" required>
+						<option value="">-- Pilih Seminar --</option>
+						<option value="Artificial Intelligence">Artificial Intelligence</option>
+						<option value="Web Development">Web Development</option>
+						<option value="Cyber Security">Cyber Security</option>
+						<option value="Data Analytics">Data Analytics</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="alasan_seminar">Alasan Mengikuti Seminar</label><br />
+
+					<textarea
+						class="input-form"
+						id="alasan_seminar"
+						name="alasan_seminar"
+						maxlength="300"
+						placeholder="Tuliskan alasan mengikuti seminar"
+						required></textarea>
+				</div>
+
+				<button type="submit" name="kirim_seminar">Kirim</button>
 				<button type="reset">Batal</button>
+				<p class="form-feedback" id="seminarFeedback" aria-live="polite"></p>
 			</form>
+
+			<?php if (isset($_SESSION["nama_peserta"])): ?>
+				<article id="hasilSeminar" class="submission-result" aria-live="polite">
+					<h3>Data Pendaftaran Seminar yang Dikirim</h3>
+					<p><strong>Nama Peserta:</strong> <?= htmlspecialchars($_SESSION["nama_peserta"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
+					<p><strong>NIM:</strong> <?= htmlspecialchars($_SESSION["nim_peserta"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
+					<p><strong>Program Studi:</strong> <?= htmlspecialchars($_SESSION["prodi_peserta"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
+					<p><strong>Pilihan Seminar:</strong> <?= htmlspecialchars($_SESSION["pilihan_seminar"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
+					<p><strong>Alasan Mengikuti Seminar:</strong> <?= nl2br(htmlspecialchars($_SESSION["alasan_seminar"] ?? "", ENT_QUOTES, "UTF-8")) ?></p>
+				</article>
+			<?php endif; ?>
 		</section>
 	</main>
 

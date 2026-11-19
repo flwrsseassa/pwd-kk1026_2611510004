@@ -126,3 +126,26 @@ contactForms.forEach((contactForm) => {
     }
   });
 });
+
+const seminarForm = document.getElementById("seminarForm");
+const seminarFeedback = document.getElementById("seminarFeedback");
+
+if (seminarForm) {
+	seminarForm.addEventListener("submit", function (event) {
+		const nama = document.getElementById("nama_peserta").value.trim();
+		const nim = document.getElementById("nim_peserta").value.trim();
+		const prodi = document.getElementById("prodi_peserta").value.trim();
+		const seminar = document.getElementById("pilihan_seminar").value.trim();
+		const alasan = document.getElementById("alasan_seminar").value.trim();
+
+		if (!nama || !nim || !prodi || !seminar || !alasan) {
+			event.preventDefault();
+			seminarFeedback.textContent = "Semua kolom pada formulir pendaftaran seminar wajib diisi.";
+		}
+	});
+
+	seminarForm.addEventListener("reset", function () {
+		seminarFeedback.textContent = "";
+	});
+}
+

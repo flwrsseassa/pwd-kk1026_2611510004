@@ -18,3 +18,4 @@ pada pertemuan ke-2, saya:
 14. menguji nilai input dengan value melalui Console DevTools.
 15. mengubah konten teks dengan textcontent dan menguji perubahan teks pada #fromFeedback melalui Console DevTools.
 16. Menguji metode classList.contains("nav-open") dan classList.toggle("nav-open") pada elemen #navMenu melalui Console DevTools. Metode toggle berhasil menambahkan (true) dan menghapus (false) class secara bergantian.
+17. Menguji pemasangan event listener click pada tombol #navToggle menggunakan addEventListener.

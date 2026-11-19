@@ -195,6 +195,15 @@ section {
   cursor: pointer;
 }
 
+#contact input, #contact textarea,
+#seminar input, #seminar select, #seminar textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+
 /* Footer */
 footer {
   background-color: #003366;
@@ -246,4 +255,12 @@ footer p {
   .nav-toggle {
     display: none;
   }
+}
+
+/* Merapikan radio button dan checkbox di bagian Contact */
+#contact input[type="radio"],
+#contact input[type="checkbox"] {
+    width: auto !important;
+    display: inline-block !important;
+    margin-right: 8px;
 }

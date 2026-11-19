@@ -279,6 +279,36 @@ switch ($programStudi) {
 				</article>
 			<?php endif; ?>
 		</section>
+
+		<section id="seminar">
+			<h2>Pendaftaran Seminar Teknologi</h2>
+
+			<form action="#seminar" method="POST">
+				<label for="nama">Nama Peserta</label>
+				<input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+				<label for="nim">NIM</label>
+				<input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+
+				<label for="prodi">Program Studi</label>
+				<input type="text" id="prodi" name="prodi" placeholder="Masukkan Program Studi" required>
+
+				<label for="pilihan_seminar">Pilihan Seminar</label>
+				<select id="pilihan_seminar" name="pilihan_seminar" required>
+					<option value="">-- Pilih Seminar --</option>
+					<option value="Artificial Intelligence">Artificial Intelligence</option>
+					<option value="Web Development">Web Development</option>
+					<option value="Cyber Security">Cyber Security</option>
+					<option value="Data Analytics">Data Analytics</option>
+				</select>
+
+				<label for="alasan">Alasan Mengikuti Seminar</label>
+				<textarea id="alasan" name="alasan" rows="4" placeholder="Tuliskan alasan mengikuti seminar" required></textarea>
+
+				<button type="submit" name="kirim">Kirim</button>
+				<button type="reset">Batal</button>
+			</form>
+		</section>
 	</main>
 
 	<footer>

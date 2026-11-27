@@ -1,64 +1,17 @@
-<?php
-# ini untuk penulisan variabel
-$nama = "Dhea Safira";
-// ini untuk penulisan konstanta
-const phi = 3.14;
-/*
-  true atau false = tipe data boolean 
-  null = tanpa isi (ketiadaan)
-  123 = tipe data angka (int)
-  3.14 = tipe data decimal
-*/
-$paras = false;
-$semester = 1;
-
-switch ($semester) {
-  case 1:
-    $semesterku = "ku lah mulai belajar";
-    $pacarku = "Dhea";
-    break;
-  case 2:
-    $semesterku = "ku lah mulai agak bisa";
-    $pacarku = "Callila";
-    break;
-  case 3:
-    $semesterku = "ku lah mulai nakal";
-    $pacarku = "Susana";
-    break;
-  case 4:
-    $semesterku = "ku lah mulai nyesel";
-    $pacarku = "Fiola";
-    break;
-  case 5:
-    $semesterku = "ku lah mulai mengejar nilai";
-    $pacarku = "Vina";
-    break;
-  default:
-    $semesterku = "lah kofang";
-    $pacarku = "Elina";
-    break;
-}
-
-for ($i = 1; $i <= 5; $i++):
-  echo $i . "<br>";
-endfor;
-?>
-
-<!doctype html>
-<html lang="id">
+<!doctype php>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profil <?php echo $nama ?></title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Profil Mahasiswa</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header>
     <div class="header-top">
-      <h1>Profil <?php echo $nama ?></h1>
-
+      <h1>Profil Mahasiswa</h1>
       <button
         class="nav-toggle"
         id="navToggle"
@@ -83,31 +36,26 @@ endfor;
     <section id="home">
       <h2>Selamat Datang</h2>
       <p>
-        Halo, saya <?= $nama ?>. Saya sedang mempelajari Pemrograman Web
-        Dasar dengan <?= phi ?>.
+        Halo, saya Nama Mahasiswa. Saya sedang mempelajari Pemograman Web
+        Dasar.
       </p>
-
-      <img src="img/foto-profil.jpg" alt="Foto profil Nama Mahasiswa" />
+      <img
+        width="150px"
+        height="200px"
+        src="img/foto-profil.jpg"
+        alt="Foto Profil Mahasiswa" />
     </section>
 
     <section id="about">
       <h2>Tentang Saya</h2>
-
       <article>
         <h3>Profil Singkat</h3>
         <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
-        <?php
-        if ($paras):
-          echo "<p>Saya berwajah cantik (calon istri perwira). </p>";
-        endif;
-        ?>
-        <p>Semester <?php echo $semester ?> (<?= $semesterku ?>). Pacarku (<?= $pacarku ?>)</p>
 
         <h3>Target Belajar</h3>
-
         <ol>
           <li>Memahami struktur HTML5.</li>
-          <li>Menyusun halaman web semantik.</li>
+          <li>Menyusun halaman web semantik</li>
           <li>Memvalidasi dokumen HTML.</li>
         </ol>
       </article>
@@ -115,16 +63,12 @@ endfor;
 
     <section id="contact">
       <h2>Kontak</h2>
-
       <p>
-        Kunjungi
-        <a href="https://github.com/username">profil GitHub saya</a>.
+        Kunjungi <a href="https://github.com/username">profil GitHub saya</a>.
       </p>
-
-      <form id="contactForm" action="index.html" method="get" novalidate>
+      <form id="contactForm" action="index.html" method="get">
         <div class="form-group">
           <label for="nama">Nama Lengkap</label><br />
-
           <input
             class="input-form"
             type="text"
@@ -135,10 +79,8 @@ endfor;
             maxlength="50"
             required />
         </div>
-
         <div class="form-group">
           <label for="email">Email</label><br />
-
           <input
             class="input-form"
             type="email"
@@ -147,10 +89,8 @@ endfor;
             placeholder="nama@email.com"
             required />
         </div>
-
         <div class="form-group">
           <label for="semester">Semester</label><br />
-
           <input
             class="input-form"
             type="number"
@@ -160,10 +100,8 @@ endfor;
             max="14"
             required />
         </div>
-
         <div class="form-group">
           <label for="tanggal">Tanggal Kunjungan</label><br />
-
           <input
             class="input-form"
             type="date"
@@ -171,10 +109,8 @@ endfor;
             name="tanggal"
             required />
         </div>
-
         <div class="form-group">
           <p>Jenis Pesan</p>
-
           <input
             type="radio"
             id="pertanyaan"
@@ -182,34 +118,26 @@ endfor;
             value="pertanyaan"
             required />
           <label for="pertanyaan">Pertanyaan</label>
-
           <input type="radio" id="saran" name="jenis_pesan" value="saran" />
           <label for="saran">Saran</label>
         </div>
-
         <div class="form-group">
           <p>Topik yang Diminati</p>
-
           <input type="checkbox" id="minat-html" name="minat" value="HTML" />
           <label for="minat-html">HTML</label>
-
           <input type="checkbox" id="minat-css" name="minat" value="CSS" />
           <label for="minat-css">CSS</label>
         </div>
-
         <div class="form-group">
           <label for="prodi">Program Studi</label><br />
-
           <select class="input-form" id="prodi" name="prodi" required>
             <option value="">-- Pilih Program Studi --</option>
             <option value="SI">Sistem Informasi</option>
             <option value="TI">Teknik Informatika</option>
           </select>
         </div>
-
         <div class="form-group">
           <label for="pesan">Pesan</label><br />
-
           <textarea
             class="input-form"
             id="pesan"
@@ -218,7 +146,6 @@ endfor;
             placeholder="Tulis pesan Anda"
             required></textarea>
         </div>
-
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
         <p id="formFeedback"></p>
@@ -227,7 +154,7 @@ endfor;
   </main>
 
   <footer>
-    <p>&copy; 2026 Nama Mahasiswa [NIM]</p>
+    <p>&copy; 2026 Nama Mhasiswa [NIM]</p>
   </footer>
   <script src="script.js"></script>
 </body>

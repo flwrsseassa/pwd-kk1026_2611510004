@@ -1,9 +1,24 @@
 # pwd-kk1026_2611510004
 
-pada pertemuan ke-03, saya:
+pada pertemuan ke-2, saya:
 
-1. menyalin artefak pertemuan-02, sebagai baseline pertemuan-03
-2. menguji fungsionalitas dari fitur yang sudah dikembangkan, hasilnya fitus dari pertemuan-02 bisa digunakan semua.
-3. mengganti index.html menjadi index.php, kemudian saya menguji ulang, fitur lama masih tetap berfungsi.
-4. menambahkan beberapa tipe data, variabel, konstanta, kemudian meng-echo sebagai output ditubuh dokumen.
-5. menambahkan percabangan baik if..else maupun switch..case.
+1. menyiapkan artefak pertemuan-01 sebagai baselane pertemuan-02, halaman masih sama dengan pertemuan-01
+2. menambah formulir pada section#contact, adapun formulir yang ditambahkan beluam ada styling.
+3. menambahkan CSS dasar selector ID section#about dan menata formulir dengan CSS dasar.
+4. memisahkan CSS internal dan menghubungkan styles.css dengan index.html
+5. menerapkan box model pada elemen halaman
+6. menata header, section, formulir, dan footer dengan mengatur padding, border, dan margin agar didalam dan luar elemen halaman memiliki ukuran dan jarak yang sesuai.
+7. menerapkan flexbox pada navigasi pertemuan-02
+8. mengatur jarak antar elemen dengan gap dan menempatkan contact pada lebar penuh dengan grid-column.
+9. menerapkan desain web responsif Breakpoint dan Media Query dengan pendekatan Mobile-First serta menyesuaikan Navigasi dan Contact pada Viewport lebih lebar
+10. menghubungkan Javascript eksternal dengan index.html
+11. memilih Elemen dengan metode getElementById() melalui Console DevTools.
+12. menguji coba elemen dengan metode getElementById melalui Console DevTools.
+13. menguji coba elemen dengan metode querySelector dan querySelectorAll melalui Console DevTools.
+14. menguji nilai input dengan value melalui Console DevTools.
+15. mengubah konten teks dengan textcontent dan menguji perubahan teks pada #fromFeedback melalui Console DevTools.
+16. Menguji metode classList.contains("nav-open") dan classList.toggle("nav-open") pada elemen #navMenu melalui Console DevTools. Metode toggle berhasil menambahkan (true) dan menghapus (false) class secara bergantian.
+17. Menguji pemasangan event listener click pada tombol #navToggle menggunakan addEventListener.
+18. menambahkan Humberger menu pada tampilan responsif
+19. mengambil nilai input formulir serta memeriksa kelengkapan data selanjutnya memvalidasi input teks, email, nilai numerik, tanggal, Radio Button, checkbox, select, textarea.
+20. menerapkan pengendalian submit formulir

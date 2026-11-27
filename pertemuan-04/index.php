@@ -3,6 +3,7 @@
 session_start();
 
 require_once("fungsi.php"); #Penggunaan require_once() memastikan berkas tersebut tersedia dan tidak dimuat berulang kali.
+require_once("koneksi.php");
 
 // P9: Memproses data formulir dan menyimpannya ke dalam session.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -82,6 +83,16 @@ switch ($programStudi) {
 
 // P9: Larik terindeks untuk menyimpan teknologi web yang dipelajari.
 $teknologiWeb = ["HTML", "CSS", "JavaScript", "PHP", "MySQL"];
+
+// P11: membaca seluruh data dari tabel (SELECT)
+$daftarKontak = [];
+$hasil = mysqli_query(
+	$koneksi,
+	"SELECT * FROM tbl_kontak_2611510004 ORDER BY id DESC"
+);
+while ($baris = mysqli_fetch_assoc($hasil)) {
+	$daftarKontak[] = $baris;
+}
 ?>
 <!doctype html>
 <html lang="id">
